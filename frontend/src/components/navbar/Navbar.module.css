@@ -1,0 +1,121 @@
+.navbar {
+    width: 220px;
+    height: auto;
+    background: linear-gradient(180deg, #1f2936, #111827);
+    color: #ffffff;
+    border-radius: 0 20px 20px 0;
+    z-index: 1000;
+    transition: width 0.4s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    position: relative;
+    flex: 1;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #c5c7cd;
+}
+
+.arrow:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+.items {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.ulist {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listitems {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 10px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    background: transparent;
+}
+
+.listitems:hover {
+    background: linear-gradient(90deg, #695cfe, #7b5dfc);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.links {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.links:hover {
+    text-decoration: none;
+}
+
+.icons {
+    font-size: 20px;
+    color: #a78bfa;
+    min-width: 25px;
+    transition: color 0.3s ease;
+}
+
+.listitems:hover .icons {
+    color: #ffffff;
+}
+
+/* Collapsed sidebar */
+.hide {
+    width: 80px;
+}
+
+.hide .listitems {
+    justify-content: center;
+    padding-left: 0;
+    gap: 0;
+}
+
+.hide .links {
+    display: none;
+}
+
+.hide .top h3 {
+    display: none;
+}
+
+.hide .arrow {
+    margin-left: -5px;
+}
+
